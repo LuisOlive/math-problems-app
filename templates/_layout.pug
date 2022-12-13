@@ -2,14 +2,22 @@ doctype html
 html(lang="es")
   head
     meta(charset="UTF-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Ejericios de matemáticas
-  body 
-    header
-      nav
-        ul
-          li
-            a(href="/algebra") Álgebra
+  body
+    include components/header
     
-    block main
+    .container.pt-5
+      .row
+        main.col-lg-10
+          block main
+          
+        aside.col-lg-2
+          h4 Conceptos
+          a.nav-link.cursor-pointer Expresión
+          a.nav-link.cursor-pointer Evaluar
+          a.nav-link.cursor-pointer Coeficiente
+        
+    
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/yeti/bootstrap.min.css", integrity="sha384-mLBxp+1RMvmQmXOjBzRjqqr0dP9VHU2tb3FK6VB0fJN/AOu7/y+CAeYeWJZ4b3ii", crossorigin="anonymous")

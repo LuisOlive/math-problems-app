@@ -23,6 +23,6 @@ export default async function exercises(req: Request, reply: Reply) {
       }
     ]
   })
-
+  
   await reply
 }
